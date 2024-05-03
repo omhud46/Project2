@@ -24,7 +24,7 @@ def scrape_book(book_url):
     return description, rating, category, img_url, quantity, price_tax, price_excluding_tax
 
 # URL of the website to scrape
-base_url = "https://books.toscrape.com/index.html"
+base_url = "https://books.toscrape.com/catalogue/category/books_1/"
 initial_url = "https://books.toscrape.com/catalogue/page-1.html"
 response = requests.get(initial_url)
 soup = BeautifulSoup(response.text, 'html.parser')
